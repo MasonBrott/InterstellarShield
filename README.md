@@ -30,13 +30,11 @@ Google [officially recommends](https://cloud.google.com/iap/docs/using-tcp-forwa
 For Linux:
 ```bash
 $(gcloud info --format="value(basic.python_location)") -m pip install numpy
-export CLOUDSDK_PYTHON_SITEPACKAGES=1
 ```
 
 For Windows (PowerShell):
 ```powershell
 start (gcloud info --format="value(basic.python_location)") "-m pip install numpy"
-$env:CLOUDSDK_PYTHON_SITEPACKAGES="1"
 ```
 
 For permanent configuration on Linux, add the export command to your `.bashrc` file.
